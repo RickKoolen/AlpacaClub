@@ -1,0 +1,97 @@
+
+html{
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: darkslategray;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+header{
+    display: grid;
+    grid-template-areas: "NavL Header NavR";
+    grid-template-columns: 3fr / 6fr / 3fr;
+    height: 80px;
+}
+
+header h1{
+    grid-area: Header;
+    text-align: center;
+    font-size: 3em;
+    margin: auto;
+    color: ;
+}
+
+nav{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 0.5em ;
+    color: rgb(200, 100, 40);
+}
+
+ul.left{
+    grid-area: NavL;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+ul.right{
+    grid-area: NavR;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0px;
+    margin-top: 30px;
+
+}
+
+li{
+    display: inline-table;
+    border: 1px solid rgb(200, 100, 40);
+}
+
+/* Main website */
+
+/* About */
+
+main img{
+    max-width: 100%;
+}
+
+.about{
+    text-align: center;
+    margin: auto;
+    max-width: 50%;
+}
+
+/* Members */
+.members{
+    display: grid;
+    grid-template-areas: 
+    "title title title title title"
+    "a b c d e";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 80px / 1fr;
+    gap: 10px;
+    text-align: center;
+}
+
+.members h1{
+    grid-area: title;
+}
+
+.members img{
+    border-radius: 50%;
+}
+
+.members p{
+    margin: auto;
+}
